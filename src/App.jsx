@@ -73,20 +73,13 @@ function App() {
       </div>
       <div className="app-container">
       {/* HEADER */}
-      <header className="header">
+      <header className="header" style={{ padding: '1rem 0', borderBottom: '1px solid var(--panel-border)', marginBottom: '3rem' }}>
         <div className="logo-container">
           <img src={logoImg} alt="GotNext Logo" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
-          <div className="logo-text">GotNext</div>
+          <div className="logo-text">Got<span className="logo-highlight">Next</span></div>
         </div>
 
-        <a href="mailto:gotnextcorp@gmail.com?subject=GotNext Inquiry" className="contact-button">
-          Contact Us
-        </a>
-      </header>
-
-      {/* MAIN CONTENT */}
-      <main className="main-content">
-        <div className="tabs-container">
+        <div className="tabs-container" style={{ margin: 0, border: 'none', height: '100%' }}>
           <button
             className={`tab-button ${activeTab === 'overview' ? 'active' : ''}`}
             onClick={() => setActiveTab('overview')}
@@ -118,6 +111,15 @@ function App() {
             Meet the Team
           </button>
         </div>
+
+        <a href="mailto:gotnextcorp@gmail.com?subject=GotNext Inquiry" className="contact-button">
+          Contact Us
+        </a>
+      </header>
+
+      {/* MAIN CONTENT */}
+      <main className="main-content">
+
 
         {/* TAB: OVERVIEW */}
         {activeTab === 'overview' && (
