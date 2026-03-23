@@ -236,9 +236,28 @@ function App() {
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '2rem', maxWidth: '600px', marginInline: 'auto' }}>
                 Get in touch with us to schedule a demo and see the difference for yourself.
               </p>
-              <a href="mailto:gotnextcorp@gmail.com?subject=Gym Partnership Inquiry" className="contact-button" style={{ display: 'inline-block', padding: '1rem 2.5rem', fontSize: '1.1rem', background: 'var(--neon-cyan)', color: 'var(--bg-color)', textDecoration: 'none', fontWeight: 'bold', borderRadius: '30px' }}>
+              <a href="mailto:gotnextcorp@gmail.com?subject=Gym Partnership Inquiry" className="contact-button" style={{ display: 'inline-block', padding: '1rem 2.5rem', fontSize: '1.1rem', background: 'var(--neon-cyan)', color: 'var(--bg-color)', textDecoration: 'none', fontWeight: 'bold', borderRadius: '30px', marginBottom: '2rem' }}>
                 Reach Out
               </a>
+
+              <div style={{ marginTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', maxWidth: '500px', marginInline: 'auto' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', fontSize: '1.1rem' }}>
+                  <span style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                    </svg>
+                    <span style={{ userSelect: 'all', color: 'var(--neon-cyan)' }}>gotnextcorp@gmail.com</span>
+                  </span>
+                  <a href="https://www.instagram.com/gotnextcorp" target="_blank" rel="noopener noreferrer" style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', transition: 'color 0.2s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--neon-orange)'} onMouseOut={(e) => e.currentTarget.style.color = 'white'}>
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span style={{ color: 'var(--neon-orange)' }}>@gotnextcorp</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -360,7 +379,23 @@ function App() {
 
       {/* FOOTER */}
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} GotNext Corp. All rights reserved.</p>
+        <div className="footer-content">
+          <div className="social-links">
+            <a href="https://www.instagram.com/gotnextcorp" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="mailto:gotnextcorp@gmail.com" className="social-icon" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+              </svg>
+            </a>
+          </div>
+          <p>&copy; {new Date().getFullYear()} GotNext Corp. All rights reserved.</p>
+        </div>
       </footer>
     </div>
     </>
