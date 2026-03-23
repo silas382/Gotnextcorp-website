@@ -4,7 +4,7 @@ import founder2 from './assets/images/Screenshot 2025-12-06 at 4.23.58 PM.png'
 import logoImg from './assets/images/LogoGot copy.png'
 import adminVideo from './assets/videos/ADMIN.mp4'
 import addStartVideo from './assets/videos/AddStart.mp4'
-import adsVideo from './assets/videos/Ads.mp4'
+import adsVideo from './assets/videos/ADs.mp4'
 import endGameVideo from './assets/videos/EndGame.mp4'
 import './App.css'
 
