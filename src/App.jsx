@@ -75,7 +75,7 @@ function App() {
         zIndex: 100,
         position: 'relative'
       }}>
-        🏀 Coming soon to 24 Hour Fitness in Southlake, TX
+        🏀 Now @ 24 Hour Fitness in Southlake, TX!
       </div>
       <div className="app-container">
         {/* HEADER */}
